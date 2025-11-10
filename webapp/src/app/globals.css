@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-neutral-50 text-neutral-700 antialiased;
+  font-family: var(--font-body), ui-sans-serif, system-ui;
+}
+
+*::selection {
+  background: #ddd6fe;
+  color: #020617;
+}
+
+.glass-panel {
+  @apply bg-white/80 backdrop-blur border border-white/40 rounded-2xl;
+  box-shadow: 0 16px 50px -20px rgba(8, 47, 63, 0.45);
+}
+
+.brand-gradient {
+  background: linear-gradient(135deg, #06b6d4 0%, #7c3aed 80%);
+}
+
+.font-body {
+  font-family: var(--font-body), ui-sans-serif, system-ui;
+}
+
+.font-heading {
+  font-family: var(--font-heading), ui-sans-serif, system-ui;
+}
